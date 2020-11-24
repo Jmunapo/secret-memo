@@ -8,5 +8,6 @@ Encrypts user's data on memo
 
 ## Attributes
 
-[http://www.adonespitogo.com/articles/encrypting-data-with-cryptojs-aes/](http://www.adonespitogo.com/articles/encrypting-data-with-cryptojs-aes/)
-[https://github.com/stellarguard/secret-memo](https://github.com/stellarguard/secret-memo)
+- [http://www.adonespitogo.com/articles/encrypting-data-with-cryptojs-aes/](http://www.adonespitogo.com/articles/encrypting-data-with-cryptojs-aes/)
+
+- [https://github.com/stellarguard/secret-memo](https://github.com/stellarguard/secret-memo)
