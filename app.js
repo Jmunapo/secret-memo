@@ -1,19 +1,19 @@
-/**
- * App Initialization point
- * 
- */
 const { env } = require('./config');
 const { SecretMemo } = require('./secret-memo');
 
+/**
+ * Script Usage
+ * @param {string} SALT is a hash string get one from md5
+ * @param {string} IV is a hash string get one from md5
+ */
 const secMemo = new SecretMemo(env.PASS_KEY, env.SALT, env.IV);
 
-const memo = secMemo.toMemo("This is my cool encrypted memo");
+const memo = secMemo.toMemo("This is my cool encrypted memo!");
 
-const encrypted = secMemo.fromMemo(memo);
+//Use this value as your memo hash
+const memo_hash = memo.value.toString('hex');
 
-console.log({ encrypted: memo.value.toString('hex'), encrypted });
+//pass either memo or memo_hash to fromMemo
+const encrypted = secMemo.fromMemo(memo_hash);
 
-(() => {
-    console.log("App Started...");
-    //59ab79537ef7d845cd008d878ce2967b1827be06315ef93f7a0e51e998c97433
-})();
+console.log({ encrypted, memo_hash });

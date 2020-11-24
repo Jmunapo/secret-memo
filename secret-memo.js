@@ -96,7 +96,3 @@ exports.SecretMemo = class SecretMemo {
         return decrypted;
     }
 }
-
-//Attributes
-//http://www.adonespitogo.com/articles/encrypting-data-with-cryptojs-aes/
-//https://github.com/stellarguard/secret-memo
